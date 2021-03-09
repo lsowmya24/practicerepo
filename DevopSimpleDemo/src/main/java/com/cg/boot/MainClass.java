@@ -1,5 +1,7 @@
 package com.cg.boot;
 
+import com.cg.model.StudentClass;
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -12,8 +14,13 @@ public class MainClass {
         
         SalesClass class1=new SalesClass();
         class1.display();
+        
+        StudentClass student=new StudentClass();
+        student.setStudentId(24);
+        student.setFirstName("sowmya");
+        student.setLastName("lingutla");
 
- 
+ System.out.println(student);
 	}
 
 }
